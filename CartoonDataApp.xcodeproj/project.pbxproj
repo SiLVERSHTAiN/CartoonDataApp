@@ -30,6 +30,7 @@
 		69225B0E29716AF100150EC6 /* CDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDService.swift; sourceTree = "<group>"; };
 		69225B1029716B1E00150EC6 /* CDRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDRequest.swift; sourceTree = "<group>"; };
 		69225B1229716C8700150EC6 /* CDEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEndPoint.swift; sourceTree = "<group>"; };
+		69225B142971712700150EC6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6954FDBD29703384008C1889 /* CartoonDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartoonDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6954FDC029703384008C1889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6954FDC229703384008C1889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		6954FDB429703384008C1889 = {
 			isa = PBXGroup;
 			children = (
+				69225B142971712700150EC6 /* README.md */,
 				6954FDBF29703384008C1889 /* CartoonDataApp */,
 				6954FDBE29703384008C1889 /* Products */,
 			);
