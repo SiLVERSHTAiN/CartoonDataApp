@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show and search for Characters
 final class CDCharacterViewController: UIViewController {
 
     override func viewDidLoad() {

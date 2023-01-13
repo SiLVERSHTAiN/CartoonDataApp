@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69225B0F29716AF200150EC6 /* CDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69225B0E29716AF100150EC6 /* CDService.swift */; };
+		69225B1129716B1E00150EC6 /* CDRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69225B1029716B1E00150EC6 /* CDRequest.swift */; };
+		69225B1329716C8700150EC6 /* CDEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69225B1229716C8700150EC6 /* CDEndPoint.swift */; };
 		6954FDC129703384008C1889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDC029703384008C1889 /* AppDelegate.swift */; };
 		6954FDC329703384008C1889 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDC229703384008C1889 /* SceneDelegate.swift */; };
 		6954FDC529703384008C1889 /* CDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDC429703384008C1889 /* CDTabBarController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69225B0E29716AF100150EC6 /* CDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDService.swift; sourceTree = "<group>"; };
+		69225B1029716B1E00150EC6 /* CDRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDRequest.swift; sourceTree = "<group>"; };
+		69225B1229716C8700150EC6 /* CDEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEndPoint.swift; sourceTree = "<group>"; };
 		6954FDBD29703384008C1889 /* CartoonDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartoonDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6954FDC029703384008C1889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6954FDC229703384008C1889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +138,9 @@
 		6954FDDC29703A1E008C1889 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				69225B0E29716AF100150EC6 /* CDService.swift */,
+				69225B1029716B1E00150EC6 /* CDRequest.swift */,
+				69225B1229716C8700150EC6 /* CDEndPoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -233,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69225B0F29716AF200150EC6 /* CDService.swift in Sources */,
 				6954FDE229703B51008C1889 /* CDCharacter.swift in Sources */,
 				6954FDCB29703384008C1889 /* CartoonDataApp.xcdatamodeld in Sources */,
+				69225B1329716C8700150EC6 /* CDEndPoint.swift in Sources */,
 				6954FDE429703B72008C1889 /* CDEpisode.swift in Sources */,
 				6954FDC529703384008C1889 /* CDTabBarController.swift in Sources */,
 				6954FDE929703C9F008C1889 /* CDLocationViewController.swift in Sources */,
@@ -242,6 +253,7 @@
 				6954FDEE29703D06008C1889 /* CDSettingsViewController.swift in Sources */,
 				6954FDE729703C69008C1889 /* CDCharacterViewController.swift in Sources */,
 				6954FDEB29703CBD008C1889 /* CDEpisodeViewController.swift in Sources */,
+				69225B1129716B1E00150EC6 /* CDRequest.swift in Sources */,
 				6954FDF0297040F8008C1889 /* Resources.swift in Sources */,
 				6954FDC329703384008C1889 /* SceneDelegate.swift in Sources */,
 				6954FDE029703B21008C1889 /* CDLocation.swift in Sources */,
