@@ -19,7 +19,7 @@ final class CDService {
     /// - Parameters:
     ///   - request: Request instance
     ///   - complition: Callback with data or error
-    public func execute(_ request: CDRequest, complition: @escaping() -> Void) {
+    public func execute(_ request: CDRequest, complition: @escaping(Result<String, Error>) -> Void) {
         
     }
 }
