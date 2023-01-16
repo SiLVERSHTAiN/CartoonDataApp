@@ -10,12 +10,18 @@ import Foundation
 /// Object that represents a single API call
 final class CDRequest {
     
+    /// API constants
     private struct Constans {
         static let baseUrl = "https://rickandmortyapi.com/api"
     }
     
+    /// Desired endPoint
     private let endPoint: CDEndPoint
-    private let pathComponents: [String]
+    
+    /// Path components for API, if any
+    private let pathComponents: Set<String>
+    
+    /// Query arguments for API. if any
     private let queryParameters: [URLQueryItem]
     
     /// Constructed url for the API request in string format
@@ -43,12 +49,23 @@ final class CDRequest {
         return string
     }
     
+    /// Computed & constructed API url
     public var url: URL? {
         return URL(string: urlString)
     }
     
+    /// Desired http method
+    public let httpMethod = "GET"
+    
+    //MARK: - Public
+    
+    /// Construct request
+    /// - Parameters:
+    ///   - endPoint: Target endPoint
+    ///   - pathComponents: Collection of Path components
+    ///   - queryParameters: Collection of query parameters
     public init(endPoint: CDEndPoint,
-                pathComponents: [String] = [],
+                pathComponents: Set<String> = [],
                 queryParameters: [URLQueryItem] = []) {
         self.endPoint = endPoint
         self.pathComponents = pathComponents

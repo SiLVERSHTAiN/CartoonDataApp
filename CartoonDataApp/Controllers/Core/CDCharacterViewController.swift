@@ -15,6 +15,7 @@ final class CDCharacterViewController: UIViewController {
 
         view.backgroundColor = .systemBackground // адаптировано под темную и светлую тему
         title = R.Name.characters
+        
     }
 
 }

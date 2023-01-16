@@ -18,8 +18,9 @@ final class CDService {
     /// Send Rick & Morty API Call
     /// - Parameters:
     ///   - request: Request instance
+    ///   - type: The type of object we expect to get back
     ///   - complition: Callback with data or error
-    public func execute(_ request: CDRequest, complition: @escaping(Result<String, Error>) -> Void) {
+    public func execute<T: Codable>(_ request: CDRequest, expecting type: T.Type, complition: @escaping(Result<T, Error>) -> Void) {
         
     }
 }
