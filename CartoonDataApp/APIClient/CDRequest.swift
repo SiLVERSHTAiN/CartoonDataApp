@@ -19,7 +19,7 @@ final class CDRequest {
     private let endPoint: CDEndPoint
     
     /// Path components for API, if any
-    private let pathComponents: Set<String>
+    private let pathComponents: [String]
     
     /// Query arguments for API. if any
     private let queryParameters: [URLQueryItem]
@@ -65,10 +65,15 @@ final class CDRequest {
     ///   - pathComponents: Collection of Path components
     ///   - queryParameters: Collection of query parameters
     public init(endPoint: CDEndPoint,
-                pathComponents: Set<String> = [],
+                pathComponents: [String] = [],
                 queryParameters: [URLQueryItem] = []) {
         self.endPoint = endPoint
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
+}
+
+extension CDRequest {
+    
+    static let listCharactersRequests = CDRequest(endPoint: .character)
 }
