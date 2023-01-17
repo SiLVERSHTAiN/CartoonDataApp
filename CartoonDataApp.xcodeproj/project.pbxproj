@@ -24,6 +24,7 @@
 		6954FDEB29703CBD008C1889 /* CDEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDEA29703CBD008C1889 /* CDEpisodeViewController.swift */; };
 		6954FDEE29703D06008C1889 /* CDSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDED29703D06008C1889 /* CDSettingsViewController.swift */; };
 		6954FDF0297040F8008C1889 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDEF297040F8008C1889 /* Resources.swift */; };
+		697A169D2976F0900068826C /* CDAllGetCharactersResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A169C2976F0900068826C /* CDAllGetCharactersResponce.swift */; };
 		697A4A222972E47800207676 /* CDOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A4A212972E47800207676 /* CDOrigin.swift */; };
 		697A4A242972E56C00207676 /* CDSingleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A4A232972E56C00207676 /* CDSingleLocation.swift */; };
 		697A4A262972E73000207676 /* CDCharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A4A252972E73000207676 /* CDCharacterStatus.swift */; };
@@ -51,6 +52,7 @@
 		6954FDEA29703CBD008C1889 /* CDEpisodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEpisodeViewController.swift; sourceTree = "<group>"; };
 		6954FDED29703D06008C1889 /* CDSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSettingsViewController.swift; sourceTree = "<group>"; };
 		6954FDEF297040F8008C1889 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		697A169C2976F0900068826C /* CDAllGetCharactersResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAllGetCharactersResponce.swift; sourceTree = "<group>"; };
 		697A4A212972E47800207676 /* CDOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDOrigin.swift; sourceTree = "<group>"; };
 		697A4A232972E56C00207676 /* CDSingleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSingleLocation.swift; sourceTree = "<group>"; };
 		697A4A252972E73000207676 /* CDCharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCharacterStatus.swift; sourceTree = "<group>"; };
@@ -124,13 +126,8 @@
 		6954FDD92970397F008C1889 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6954FDDF29703B21008C1889 /* CDLocation.swift */,
-				6954FDE129703B51008C1889 /* CDCharacter.swift */,
-				6954FDE329703B72008C1889 /* CDEpisode.swift */,
-				697A4A272972E78900207676 /* CDCharacterGender.swift */,
-				697A4A252972E73000207676 /* CDCharacterStatus.swift */,
-				697A4A232972E56C00207676 /* CDSingleLocation.swift */,
-				697A4A212972E47800207676 /* CDOrigin.swift */,
+				697A169B2976F0510068826C /* APIResponseTypes */,
+				697A169A2976F03B0068826C /* DataTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +181,28 @@
 				6954FDED29703D06008C1889 /* CDSettingsViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		697A169A2976F03B0068826C /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				6954FDDF29703B21008C1889 /* CDLocation.swift */,
+				6954FDE129703B51008C1889 /* CDCharacter.swift */,
+				6954FDE329703B72008C1889 /* CDEpisode.swift */,
+				697A4A272972E78900207676 /* CDCharacterGender.swift */,
+				697A4A252972E73000207676 /* CDCharacterStatus.swift */,
+				697A4A232972E56C00207676 /* CDSingleLocation.swift */,
+				697A4A212972E47800207676 /* CDOrigin.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		697A169B2976F0510068826C /* APIResponseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				697A169C2976F0900068826C /* CDAllGetCharactersResponce.swift */,
+			);
+			path = APIResponseTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +285,7 @@
 				6954FDE929703C9F008C1889 /* CDLocationViewController.swift in Sources */,
 				697A4A282972E78900207676 /* CDCharacterGender.swift in Sources */,
 				6954FDC129703384008C1889 /* AppDelegate.swift in Sources */,
+				697A169D2976F0900068826C /* CDAllGetCharactersResponce.swift in Sources */,
 				697A4A222972E47800207676 /* CDOrigin.swift in Sources */,
 				6954FDEE29703D06008C1889 /* CDSettingsViewController.swift in Sources */,
 				6954FDE729703C69008C1889 /* CDCharacterViewController.swift in Sources */,
