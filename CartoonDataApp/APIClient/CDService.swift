@@ -22,5 +22,15 @@ final class CDService {
     ///   - complition: Callback with data or error
     public func execute<T: Codable>(_ request: CDRequest, expecting type: T.Type, complition: @escaping(Result<T, Error>) -> Void) {
         
+        
+    }
+    
+        //MARK: - Private
+    
+    private func request(from cdRequest: CDRequest) -> URLRequest? {
+        guard let url = cdRequest.url else { return nil }
+        var request = URLRequest(url: url)
+        request.httpMethod = cdRequest.httpMethod
+        return request
     }
 }
