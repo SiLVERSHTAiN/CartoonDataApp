@@ -7,14 +7,16 @@
 
 import UIKit
 
-class CharacterListView: UIView {
+/// View that handles showing list of characters, loader, etc.
+final class CharacterListView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = .systemBlue
     }
-    */
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("Unsupported")
+    }
 }
