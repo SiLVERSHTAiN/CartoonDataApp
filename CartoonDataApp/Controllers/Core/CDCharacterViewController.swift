@@ -19,6 +19,10 @@ final class CDCharacterViewController: UIViewController {
         title = R.Name.characters
         
         view.addSubview(characterListView)
+        setupView()
+    }
+
+    private func setupView() {
         
         NSLayoutConstraint.activate([
             characterListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -27,5 +31,4 @@ final class CDCharacterViewController: UIViewController {
             characterListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
-
 }

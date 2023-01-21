@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6907CD3B297852DA00F69430 /* CharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907CD3A297852DA00F69430 /* CharacterListViewViewModel.swift */; };
 		6907CD3D2978537200F69430 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6907CD3C2978537200F69430 /* CharacterListView.swift */; };
+		691CCFD8297C45B2008CEBB2 /* Ext + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691CCFD7297C45B2008CEBB2 /* Ext + UIView.swift */; };
 		69225B0F29716AF200150EC6 /* CDService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69225B0E29716AF100150EC6 /* CDService.swift */; };
 		69225B1129716B1E00150EC6 /* CDRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69225B1029716B1E00150EC6 /* CDRequest.swift */; };
 		69225B1329716C8700150EC6 /* CDEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69225B1229716C8700150EC6 /* CDEndPoint.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		6907CD3A297852DA00F69430 /* CharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewViewModel.swift; sourceTree = "<group>"; };
 		6907CD3C2978537200F69430 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		691CCFD7297C45B2008CEBB2 /* Ext + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext + UIView.swift"; sourceTree = "<group>"; };
 		69225B0E29716AF100150EC6 /* CDService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDService.swift; sourceTree = "<group>"; };
 		69225B1029716B1E00150EC6 /* CDRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDRequest.swift; sourceTree = "<group>"; };
 		69225B1229716C8700150EC6 /* CDEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDEndPoint.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				6954FDEF297040F8008C1889 /* Resources.swift */,
+				691CCFD7297C45B2008CEBB2 /* Ext + UIView.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				6954FDF0297040F8008C1889 /* Resources.swift in Sources */,
 				6954FDC329703384008C1889 /* SceneDelegate.swift in Sources */,
 				6954FDE029703B21008C1889 /* CDLocation.swift in Sources */,
+				691CCFD8297C45B2008CEBB2 /* Ext + UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
