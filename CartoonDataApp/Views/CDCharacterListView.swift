@@ -1,5 +1,5 @@
 //
-//  CharacterListView.swift
+//  CDCharacterListView.swift
 //  CartoonDataApp
 //
 //  Created by Aleksandr on 18.01.2023.
@@ -8,9 +8,9 @@
 import UIKit
 
 /// View that handles showing list of characters, loader, etc.
-final class CharacterListView: UIView {
+final class CDCharacterListView: UIView {
     
-    private let viewModel = CharacterListViewViewModel()
+    private let viewModel = CDCharacterListViewViewModel()
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)

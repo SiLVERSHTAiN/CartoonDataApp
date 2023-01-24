@@ -1,5 +1,5 @@
 //
-//  CharacterListViewViewModel.swift
+//  CDCharacterListViewViewModel.swift
 //  CartoonDataApp
 //
 //  Created by Aleksandr on 18.01.2023.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CharacterListViewViewModel: NSObject {
+final class CDCharacterListViewViewModel: NSObject {
     
     
     
@@ -24,7 +24,7 @@ final class CharacterListViewViewModel: NSObject {
     }
 }
 
-extension CharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension CDCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
