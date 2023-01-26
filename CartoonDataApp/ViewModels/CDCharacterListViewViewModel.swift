@@ -31,8 +31,7 @@ extension CDCharacterListViewViewModel: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .systemGreen
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CDCharacterCollectionViewCell.cellIdentifier, for: indexPath)
         return cell
     }
     

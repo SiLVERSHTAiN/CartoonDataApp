@@ -27,8 +27,8 @@ final class CDCharacterListView: UIView {
         collectionView.isHidden = true
         collectionView.alpha = 0
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(UICollectionViewCell.self,
-                                forCellWithReuseIdentifier: "cell")
+        collectionView.register(CDCharacterCollectionViewCell.self,
+                                forCellWithReuseIdentifier: CDCharacterCollectionViewCell.cellIdentifier)
         return collectionView
     }()
     

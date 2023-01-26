@@ -28,6 +28,7 @@
 		6954FDEE29703D06008C1889 /* CDSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDED29703D06008C1889 /* CDSettingsViewController.swift */; };
 		6954FDF0297040F8008C1889 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954FDEF297040F8008C1889 /* Resources.swift */; };
 		6962F6D22980252700D3A267 /* CDCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962F6D12980252700D3A267 /* CDCharacterCollectionViewCell.swift */; };
+		6962F6D42980395900D3A267 /* CDCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6962F6D32980395900D3A267 /* CDCharacterCollectionViewCellViewModel.swift */; };
 		697A169D2976F0900068826C /* CDAllGetCharactersResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A169C2976F0900068826C /* CDAllGetCharactersResponce.swift */; };
 		697A4A222972E47800207676 /* CDOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A4A212972E47800207676 /* CDOrigin.swift */; };
 		697A4A242972E56C00207676 /* CDSingleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697A4A232972E56C00207676 /* CDSingleLocation.swift */; };
@@ -60,6 +61,7 @@
 		6954FDED29703D06008C1889 /* CDSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSettingsViewController.swift; sourceTree = "<group>"; };
 		6954FDEF297040F8008C1889 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		6962F6D12980252700D3A267 /* CDCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		6962F6D32980395900D3A267 /* CDCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		697A169C2976F0900068826C /* CDAllGetCharactersResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDAllGetCharactersResponce.swift; sourceTree = "<group>"; };
 		697A4A212972E47800207676 /* CDOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDOrigin.swift; sourceTree = "<group>"; };
 		697A4A232972E56C00207676 /* CDSingleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSingleLocation.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				6907CD3A297852DA00F69430 /* CDCharacterListViewViewModel.swift */,
+				6962F6D32980395900D3A267 /* CDCharacterCollectionViewCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				6954FDE929703C9F008C1889 /* CDLocationViewController.swift in Sources */,
 				697A4A282972E78900207676 /* CDCharacterGender.swift in Sources */,
 				6954FDC129703384008C1889 /* AppDelegate.swift in Sources */,
+				6962F6D42980395900D3A267 /* CDCharacterCollectionViewCellViewModel.swift in Sources */,
 				697A169D2976F0900068826C /* CDAllGetCharactersResponce.swift in Sources */,
 				697A4A222972E47800207676 /* CDOrigin.swift in Sources */,
 				6954FDEE29703D06008C1889 /* CDSettingsViewController.swift in Sources */,
