@@ -16,7 +16,7 @@ final class CDCharacterListViewViewModel: NSObject {
         CDService.share.execute(.listCharactersRequests, expecting: CDGetCharactersResponce.self) { result in
             switch result {
             case .success(let model):
-                print(String(describing: model))
+                print("Example image url"+String(model.results.first?.image ?? "No image"))
             case .failure(let error):
                 print(String(describing: error))
             }
@@ -31,7 +31,16 @@ extension CDCharacterListViewViewModel: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CDCharacterCollectionViewCell.cellIdentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CDCharacterCollectionViewCell.cellIdentifier, for: indexPath
+        ) as? CDCharacterCollectionViewCell else {
+            fatalError("Unsupported cell")
+        }
+        let viewModel = CDCharacterCollectionViewCellViewModel(
+            characterName: "Alex",
+            characterStatus: .avile,
+            characterImageUrl: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")
+        )
+        cell.configure(with: viewModel)
         return cell
     }
     
