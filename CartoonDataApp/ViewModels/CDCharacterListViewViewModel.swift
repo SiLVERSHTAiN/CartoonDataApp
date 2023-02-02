@@ -9,15 +9,31 @@ import UIKit
 
 final class CDCharacterListViewViewModel: NSObject {
     
+    private var characters: [CDCharacter] = [] {
+        didSet {
+            for character in characters {
+                let viewModel = CDCharacterCollectionViewCellViewModel(
+                    characterName: character.name,
+                    characterStatus: character.status,
+                    characterImageUrl: URL(string: character.image)
+                )
+                cellViewModels.append(viewModel)
+            }
+        }
+    }
+    private var cellViewModels: [CDCharacterCollectionViewCellViewModel] = []
     
-    
-    func fetchCharacters() {
+    public func fetchCharacters() {
         
-        CDService.share.execute(.listCharactersRequests, expecting: CDGetCharactersResponce.self) { result in
+        CDService.share.execute(
+            .listCharactersRequests,
+            expecting: CDGetCharactersResponce.self
+        ) { [weak self]result in
             switch result {
-            case .success(let model):
-                print("Example image url"+String(model.results.first?.image ?? "No image"))
-            case .failure(let error):
+            case .success(let responseModel):
+                let results = responseModel.results
+                self?.characters = results
+             case .failure(let error):
                 print(String(describing: error))
             }
         }
@@ -27,7 +43,7 @@ final class CDCharacterListViewViewModel: NSObject {
 extension CDCharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return cellViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -35,12 +51,7 @@ extension CDCharacterListViewViewModel: UICollectionViewDataSource, UICollection
         ) as? CDCharacterCollectionViewCell else {
             fatalError("Unsupported cell")
         }
-        let viewModel = CDCharacterCollectionViewCellViewModel(
-            characterName: "Alex",
-            characterStatus: .avile,
-            characterImageUrl: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")
-        )
-        cell.configure(with: viewModel)
+        cell.configure(with: cellViewModels[indexPath.row])
         return cell
     }
     
